@@ -1,0 +1,54 @@
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00182b, #062741, #124468, #0868b1);
+}
+
+.logoLivro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 330px;
+  padding: 20px;
+  color: #fff;
+}
+
+.navPrincipal {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 3rem;
+
+    a {
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+.sessaoPesquisa {
+  display: flex;
+  text-align: center;
+  border: solid #fff 2px;
+  border-radius: 17px;
+  width: 205px;
+  padding-left: 5px;
+
+  input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    background-color: red;
+  }
+  & ::placeholder {
+    color: white;
+    text-align: center;
+  }
+}

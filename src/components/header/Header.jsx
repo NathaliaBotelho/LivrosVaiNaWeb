@@ -1,4 +1,7 @@
+import s from "./Header.module.scss";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import IconLivro from "../../assets/IconLivro.png";
+import Lupa from "../../assets/Lupa.png";
 
 import Inicio from "../../pages/inicio/Inicio";
 import LivrosDoados from "../../pages/LivrosDoados/LivrosDoados";
@@ -8,22 +11,35 @@ export default function Header() {
   return (
     <BrowserRouter>
       <header>
-        <nav>
-          <ul>
-            <li>
-              {" "}
-              <Link to="/"> Inicio</Link>
-            </li>
-            <li>
-              <Link to="/LivrosDoados">Livros Doados</Link>
-            </li>
-            <li>
-              <Link to="/QueroDoar">Quero Doar</Link>
-            </li>
-          </ul>
-        </nav>
+        <section className={s.logoLivro}>
+          <img src={IconLivro} alt="Imagem ilustrativa de um livro aberto." />
+
+          <h1>Livros Vai Na Web</h1>
+        </section>
+
+        <section>
+          <nav className={s.navPrincipal}>
+            <ul>
+              <li>
+                <Link to="/"> Inicio</Link>
+              </li>
+              <li>
+                <Link to="/LivrosDoados">Livros Doados</Link>
+              </li>
+              <li>
+                <Link to="/QueroDoar">Quero Doar</Link>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section className={s.sessaoPesquisa}>
+          <input type="search" placeholder="O que você procura?" />
+          <button>
+            <img src={Lupa} alt="" />
+          </button>
+        </section>
       </header>
-      ;
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/LivrosDoados" element={<LivrosDoados />} />
