@@ -46,7 +46,50 @@
     p {
       font-size: 30px;
       text-align: center;
-      width: 95%;
+      font-size: 27px;
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .primeiraSessaoInicio {
+    background-position: center;
+    height: 50vh;
+
+    h2 {
+      font-size: 28px;
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+  .porqueDoarSection {
+    height: 170vh;
+
+    h2 {
+      text-align: center;
+
+      font-size: 33px;
+      padding: 0;
+    }
+  }
+
+  .containerCards {
+    flex-direction: column;
+    align-items: center;
+    height: 150vh;
+
+    section {
+      width: 270px;
+      height: 35vh;
+
+      p {
+        font-size: 21px;
+      }
+      img {
+        width: 80px;
+      }
     }
   }
 }

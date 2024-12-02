@@ -1,0 +1,108 @@
+.sectioPrincipal {
+  width: 100%;
+  height: 86.5vh;
+}
+
+.livrosDoados {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+.biblioteca {
+  display: flex;
+  height: 70vh;
+  justify-content: space-around;
+  align-items: center;
+
+  img {
+    border-radius: solid #005696 5px;
+    border-radius: 5px #005696;
+    display: flex;
+    height: 120px;
+    align-items: center;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    height: 40vh;
+    width: 40vh;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      width: 18vh;
+      justify-content: center;
+      padding-top: 15px;
+    }
+
+    h4 {
+      display: flex;
+      align-items: center;
+      width: 25vh;
+      font-size: 18px;
+      justify-content: center;
+      padding-top: 15px;
+    }
+  }
+  .divUm {
+    border: solid #005996 3px;
+    border-radius: 20px;
+    height: 264px;
+    width: 245px;
+  }
+  .divDois {
+    border: solid #005996 3px;
+    border-radius: 21px;
+    height: 270px;
+    width: 245px;
+
+    img {
+      height: 17vh;
+      width: 14vh;
+    }
+    h4 {
+      height: 3px;
+      width: 30vh;
+    }
+    p {
+      width: 100px;
+      padding-top: 11px;
+      text-align: center;
+    }
+  }
+
+  .divTres {
+    border: solid #005996 3px;
+    border-radius: 20px;
+    height: 270px;
+    width: 245px;
+
+    img {
+      height: 19vh;
+      width: 15vh;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .sectioPrincipal {
+    height: 145vh;
+  }
+  .livrosDoados {
+    width: 100%;
+  }
+
+  .biblioteca {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

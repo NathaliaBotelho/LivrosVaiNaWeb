@@ -5,9 +5,12 @@ import s from "./QueroDoar.module.scss";
 export default function QueroDoar() {
   return (
     <section className={s.queroDoarSection}>
-      <p>Por favor, preencha o formlário com suas informações do livro.</p>
+      <p>
+        Por favor, preencha o formulário com as suas informações e as
+        informações do livro
+      </p>
 
-      <form action="">
+      <form>
         <div>
           <img src={Vector} alt="Imagem ilustrativa de um livro aberto." />
           <h2>Informações do Livro</h2>

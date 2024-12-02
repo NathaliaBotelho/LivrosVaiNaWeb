@@ -1,5 +1,5 @@
 .queroDoarSection {
-  height: 85vh;
+  height: 86.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,9 +42,30 @@ form {
 }
 
 .buttonDoar {
+  padding: 0;
   width: 50%;
   height: 8vh;
   font-size: 24px;
   background-color: #005695;
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  .queroDoarSection {
+    height: 100vh;
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  form {
+    width: 90%;
+
+    .buttonDoar {
+      width: 150px;
+    }
+  }
 }

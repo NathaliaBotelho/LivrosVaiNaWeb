@@ -17,27 +17,23 @@ export default function Header() {
           <h1>Livros Vai Na Web</h1>
         </section>
 
-        <section>
-          <nav className={s.navPrincipal}>
-            <ul>
-              <li>
-                <Link to="/"> Inicio</Link>
-              </li>
-              <li>
-                <Link to="/LivrosDoados">Livros Doados</Link>
-              </li>
-              <li>
-                <Link to="/QueroDoar">Quero Doar</Link>
-              </li>
-            </ul>
-          </nav>
-        </section>
+        <nav className={s.navPrincipal}>
+          <ul>
+            <li>
+              <Link to="/"> Inicio</Link>
+            </li>
+            <li>
+              <Link to="/LivrosDoados">Livros Doados</Link>
+            </li>
+            <li>
+              <Link to="/QueroDoar">Quero Doar</Link>
+            </li>
+          </ul>
+        </nav>
 
         <section className={s.sessaoPesquisa}>
           <input type="search" placeholder="O que você procura?" />
-          <button>
-            <img src={Lupa} alt="" />
-          </button>
+          <img src={Lupa} alt="Imagem ilustrativa de uma lupa." />
         </section>
       </header>
       <Routes>
