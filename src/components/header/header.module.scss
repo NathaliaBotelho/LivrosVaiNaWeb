@@ -1,0 +1,88 @@
+header {
+  height: 100px;
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #00182b, #062741, #124468, #0868b1);
+}
+
+.logoLivro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 330px;
+  padding: 20px;
+  color: #fff;
+}
+
+.navPrincipal {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 3rem;
+
+    a {
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+.sessaoPesquisa {
+  display: flex;
+  text-align: center;
+  border: solid #fff 2px;
+  border-radius: 17px;
+  width: 251.74px;
+  padding-right: 5px;
+  height: 40.5px;
+  align-items: center;
+
+  input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    height: 51.5px;
+    width: 28vw;
+    padding: 0 30px;
+  }
+  & ::placeholder {
+    color: white;
+    text-align: center;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1vw;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 160px;
+    padding-left: 20px;
+  }
+
+  .logoLivro {
+    width: 90%;
+  }
+  .navPrincipal {
+    width: 100vw;
+    height: 117px;
+
+    ul {
+      width: 100%;
+    }
+  }
+  .sessaoPesquisa {
+    display: none;
+  }
+}
