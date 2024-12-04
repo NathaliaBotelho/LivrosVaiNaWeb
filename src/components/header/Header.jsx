@@ -1,4 +1,4 @@
-import s from "./Header.module.scss";
+import s from "./header.module.scss";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import IconLivro from "../../assets/IconLivro.png";
 import Lupa from "../../assets/Lupa.png";
