@@ -15,7 +15,7 @@ export default function QueroDoar() {
       titulo,
       categoria,
       autor,
-      imagem_url,
+      image_url,
     };
 
     await axios.post(urlApi, dadosEnviar);
