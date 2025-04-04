@@ -1,10 +1,19 @@
-import fuction from "../inicio/Inicio";
+// import fuction from "../inicio/Inicio";
+import axios from "axios";
 import s from "./LivrosDoados.module.scss";
-import Livro from "../../assets/Livro.png";
-import Livro2 from "../../assets/Livro2.png";
-import Livro3 from "../../assets/Livro3.png";
+import { useState, useEffect } from "react";
 
 export default function LivrosDoados() {
+  const [livros, setLivros] = useState([]);
+
+  const getLivros = async () => {
+    const response = await axios.get("https://api-4-kfm3.onrender.com/livros");
+    setLivros(response.data);
+  };
+  useEffect(() => {
+    getLivros();
+  }, []);
+
   return (
     <section className={s.sectioPrincipal}>
       <section>
@@ -12,32 +21,14 @@ export default function LivrosDoados() {
       </section>
 
       <section className={s.biblioteca}>
-        <div className={s.divUm}>
-          <img
-            src={Livro}
-            alt="Imagem do livro 'O Protagonista' de Suzanne Andrade'."
-          />
-          <h3>O Protagonista</h3>
-          <p>Sussane Andrade</p>
-          <p>Ficção</p>
-        </div>
-        <div className={s.divDois}>
-          <img
-            src={Livro2}
-            alt="Imagem do livro 'O Protagonista' de Suzanne Andrade'."
-          />
-          <h4>Orgulho E Preconceito</h4>
-          <p>Jane Austen Romance</p>
-        </div>
-        <div className={s.divTres}>
-          <img
-            src={Livro3}
-            alt="Imagem do livro 'O Protagonista' de Suzanne Andrade'."
-          />
-          <h4>E O Vento Levou</h4>
-          <p>Sussane Andrade</p>
-          <p>Romance</p>
-        </div>
+        {livros.map((item) => (
+          <div className={s.divUm} key={item.id}>
+            <img src={item.image_url} alt="" />
+            <h3>{item.titulo}</h3>
+            <p>{item.autor}</p>
+            <p>{item.categoria}</p>
+          </div>
+        ))}
       </section>
     </section>
   );
