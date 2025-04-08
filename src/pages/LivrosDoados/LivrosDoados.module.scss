@@ -1,8 +1,9 @@
 .sectioPrincipal {
   width: 100%;
-  height: 86.5vh;
+  height: 200vh;
 }
 
+// tema da página "Livros Doados"
 .livrosDoados {
   display: flex;
   justify-content: center;
@@ -13,7 +14,8 @@
 
 .biblioteca {
   display: flex;
-  height: 70vh;
+  flex-wrap: wrap;
+  height: 180vh;
   justify-content: space-around;
   align-items: center;
 
@@ -31,63 +33,26 @@
     justify-content: center;
     flex-direction: column;
     align-content: space-between;
+    text-align: center;
     height: 40vh;
     width: 40vh;
 
     h3 {
       display: flex;
+      text-align: center;
       align-items: center;
       width: 18vh;
       justify-content: center;
       padding-top: 15px;
     }
-
-    h4 {
-      display: flex;
-      align-items: center;
-      width: 25vh;
-      font-size: 18px;
-      justify-content: center;
-      padding-top: 15px;
-    }
   }
+
+  //Borda dos livros
   .divUm {
     border: solid #005996 3px;
     border-radius: 20px;
-    height: 264px;
+    height: 300px;
     width: 245px;
-  }
-  .divDois {
-    border: solid #005996 3px;
-    border-radius: 21px;
-    height: 270px;
-    width: 245px;
-
-    img {
-      height: 17vh;
-      width: 14vh;
-    }
-    h4 {
-      height: 3px;
-      width: 30vh;
-    }
-    p {
-      width: 100px;
-      padding-top: 11px;
-      text-align: center;
-    }
-  }
-
-  .divTres {
-    border: solid #005996 3px;
-    border-radius: 20px;
-    height: 270px;
-    width: 245px;
-
-    img {
-      height: 19vh;
-      width: 15vh;
-    }
   }
 }
 
